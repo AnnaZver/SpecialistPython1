@@ -14,3 +14,17 @@
 #    #
 #    #
 ######
+len_side = int(input("введите длину стороны:"))
+space_side = " " * (len_side - 2)
+if len_side < 0:
+    print("введено недопустимое значение")
+elif len_side == 0:
+    print(".")
+elif len_side == 1:
+    print("#")
+elif len_side == 2:
+    print("#" * 2 + "\n" + "#" * 2)
+else:
+    print("#" * len_side)
+    print((len_side-3) * ("#" + space_side + "#" + "\n") + "#" + space_side + "#")
+    print("#" * len_side)
