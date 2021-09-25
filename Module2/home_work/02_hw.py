@@ -7,4 +7,13 @@
 # коров, корова или коровы
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
-# TODO: your code here
+ows = int(input("ну и сколько же этих коров?"))
+
+if (5 <= cows <= 20) or (5 <= (cows % 10) <= 10) or (cows == 0) or (cows % 10 == 0) or (5 <= cows % 100 <= 20):
+    print(cows, "коров")
+
+elif cows == 1 or cows % 10 == 1:
+    print(cows, "корова")
+
+else:
+    print(cows, "коровы")
