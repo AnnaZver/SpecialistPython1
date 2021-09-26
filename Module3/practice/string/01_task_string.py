@@ -6,5 +6,7 @@
 name = input("Имя: ")
 surname = input("Фамилия: ")
 
+name_correct = name.title()
+surname_correct = surname.title()
 
-print(name, surname)
+print(name_correct, surname_correct)
