@@ -8,3 +8,8 @@ item = {"name": "Кроссовки", "price": "7540.5", "currency": "rub", "cou
 dollar_rate = 74.12
 
 # TODO: your code here
+item = {"name": "Кроссовки", "price": "7540.13", "currency": "rub", "count": "10"}
+dollar_rate = 74.12
+
+price = round(float(item["price"]) * float(item["count"]), 2)
+print(f"цена всех товаров равна {price}")
