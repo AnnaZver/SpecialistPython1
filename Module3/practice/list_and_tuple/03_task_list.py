@@ -2,3 +2,10 @@
 # Вывести на экран сумму всех элементов.
 
 # TODO: your code here
+numbers = (1,5,7,3,-10,)
+sum_numbers = 0
+
+for number in numbers:
+    sum_numbers += number
+
+print(sum_numbers)
