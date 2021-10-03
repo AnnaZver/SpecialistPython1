@@ -2,3 +2,11 @@
 # Вывести на экран сумму всех положительных элементов кратных двум.
 
 # TODO: your code here
+numbers = (1,2,2,5,7,6)
+sum = 0
+
+for i in numbers:
+    if (i % 2 == 0) and (i > 0):
+        sum = sum + i
+
+print(sum)
