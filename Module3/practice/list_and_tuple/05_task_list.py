@@ -15,3 +15,13 @@ fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # Важно! Ваше решение должно работать с любыми корректными "исходными данными"
 # Проверьте это, добавив или удалив несколько элементов списка
+
+long_fruit = fruits[0]
+number = 1
+for fruit in fruits:
+    if len(fruit) > len(long_fruit):
+        long_fruit = fruit
+
+for fruit in fruits:
+    print ("#", number, " " * (len(long_fruit) - len(fruit)), fruit)
+    number += 1
